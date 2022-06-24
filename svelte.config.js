@@ -10,8 +10,15 @@ const config = {
 	kit: {
 		adapter: adapter(),
 
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		paths: {
+			base: "/generator"
+		},
+
+		prerender: {
+			default: true
+		},
+
+		trailingSlash: 'always',
 	}
 };
 
